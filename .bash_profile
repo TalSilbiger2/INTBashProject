@@ -5,6 +5,7 @@
 # Add greeting message to .bash_profile
 echo "Hello $USER"
 
+echo ""
 
 # Q2
 export course_id="devopsthehardway"
