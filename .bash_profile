@@ -5,14 +5,8 @@
 # Add greeting message to .bash_profile
 echo "Hello $USER"
 
-echo ""
-
-# Q2
 export course_id="devopsthehardway"
 
-echo ""
-
-# Q3
 token_file="$HOME/.token"
 
 # Check if the .token file exists
@@ -28,31 +22,18 @@ else
     echo "Warning: .token file does not exist in the home directory"
 fi
 
-# Q4
-# Change the user's default permissions of new created files to rw for the user and the group only.
 umask 006
 
-echo ""
-
-# Q5
 export PATH="\$PATH:/home/$USER/usercommands"
-echo ""
 
-# Q6
 # Get the current date and time in ISO 8601 format with UTC timezone
 echo "The current date is:" $(/bin/date -u +'%Y-%m-%dT%H:%M:%S%:z')
 
 # Print the current date and time
 echo $current_date
 
-echo ""
-
-# Q7
 alias ltxt="/bin/ls *.txt"
 
-echo ""
-
-# Q8
 # Define the directory path
 tmp_dir="$HOME/tmp"
 
@@ -65,9 +46,6 @@ else
     /bin/mkdir "$tmp_dir"
 fi
 
-echo ""
-
-# Q9 
 # Check if a process is bound to port 8080
 if /bin/lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null; then
     # Get the PID of the process bound to port 8080
@@ -75,4 +53,3 @@ if /bin/lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null; then
     #Kill the process
     kill $PID
 fi
-
