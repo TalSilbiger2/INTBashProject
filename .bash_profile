@@ -71,7 +71,6 @@ echo ""
 if /bin/lsof -Pi :8080 -sTCP:LISTEN -t >/dev/null; then
     # Get the PID of the process bound to port 8080
     PID=$(lsof -Pi :8080 -sTCP:LISTEN -t)
-    
     #Kill the process
     kill $PID
 fi
