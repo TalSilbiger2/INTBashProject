@@ -24,7 +24,7 @@ fi
 
 umask 006
 
-export PATH="\$PATH:/home/$USER/usercommands"
+export PATH="$PATH:/home/$USER/usercommands"
 
 # Get the current date and time in ISO 8601 format with UTC timezone
 echo "The current date is:" $(/bin/date -u +'%Y-%m-%dT%H:%M:%S%:z')
