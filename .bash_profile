@@ -5,7 +5,7 @@
 # Add greeting message to .bash_profile
 echo "Hello $USER"
 
-export course_id="devopsthehardway"
+export course_id="_repo_name_"
 
 token_file="$HOME/.token"
 
