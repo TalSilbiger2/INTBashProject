@@ -18,8 +18,6 @@ if [ -f "$token_file" ]; then
     if [ "$permissions" -gt 600 ]; then
         echo "Warning: .token file has too open permissions"
     fi
-else
-    echo "Warning: .token file does not exist in the home directory"
 fi
 
 umask 006
